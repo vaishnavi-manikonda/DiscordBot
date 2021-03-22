@@ -25,7 +25,7 @@ module.exports = {
         if(data.weather.icon!=undefined){
             icon = data.weather.icon;
         }
-        message.channel.send(`${icon} It is ${currentTemp} F°, it feels like it's ${feelsLike} F°, and it is ${data.clouds.all}% cloudy in ${data.name}.`);
+        message.reply(`${icon} It is ${currentTemp} F°, it feels like it's ${feelsLike} F°, and it is ${data.clouds.all}% cloudy in ${data.name}.`);
 	})
 	.catch(function() {
 		// catch any errors
