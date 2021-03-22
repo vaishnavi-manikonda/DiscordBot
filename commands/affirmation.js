@@ -1,6 +1,6 @@
 module.exports = {
 	name: 'affirmation',
-	description: 'Gets affirmation!',
+	description: 'Gets affirmation.',
 	execute(message, args) {
 		const fetch = require('node-fetch');
         fetch('https://www.affirmations.dev/')  
